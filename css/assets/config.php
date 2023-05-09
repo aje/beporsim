@@ -1,0 +1,17 @@
+@gray3: #333;
+@gray6: #666; 
+@gray9: #999; 
+@grayc: #ccc;
+@grayd: #ddd;
+@graye: #eee;
+@border: #ccc;
+@black: #666;
+@bglight: white;
+@bgdark: #eee; 
+@bgmed: #f9f9f9;
+@blue: #31A9D4;
+@green: #6EB944;
+@orange: #E55239;
+@navy: #212d3a;
+@darkblue: darken(@blue, 8%);
+@bgpic: '../img/bgtop.jpg';

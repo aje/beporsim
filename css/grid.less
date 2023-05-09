@@ -1,0 +1,86 @@
+@width: 1170px;
+@column: 24;
+
+@margin: (100%/144);
+@col: (100%/36);
+
+.container {
+    // width: 1170px; 
+    max-width: @width; 
+    margin: 0 auto;
+    position: relative;
+    .cl;     
+}
+.row {
+    .cl;
+}
+[class*='col-'] {
+    float: right; 
+    min-height: 1px; 
+    width: @col; 
+    /*-- our gutter -- */
+    // @m: ((@gutter/2) * 100) / @width;
+    margin-left: @margin; 
+    margin-right: @margin; 
+    // background-color: #FFDCDC;
+}
+.col-width(@n) {
+    width: (@n * @col) + ((@n - 1) * @margin * 2);
+    // width: ((@t * @c) + ((@t - 1) * @g))*100/@w;
+    // @one_col: (100% - (@gutter_pc * (@max_columns - 1))) / @max_columns;
+    // width:(@one_col * @num) + (@gutter_pc * (@num - 1));
+}
+
+.col-1{ .col-width(1) }
+.col-2{ .col-width(2) }
+.col-3{ .col-width(3) }
+.col-4{ .col-width(4) }
+.col-5{ .col-width(5) }
+.col-6{ .col-width(6) }
+.col-7{ .col-width(7) }
+.col-8{ .col-width(8) }
+.col-9{ .col-width(9) }
+.col-10{ .col-width(10) }
+.col-11{ .col-width(11) }
+.col-12{ .col-width(12) }
+.col-13{ .col-width(13) }
+.col-14{ .col-width(14) }
+.col-15{ .col-width(15) }
+.col-16{ .col-width(16) }
+.col-17{ .col-width(17) }
+.col-18{ .col-width(18) }
+.col-19{ .col-width(19) }
+.col-20{ .col-width(20) }
+.col-21{ .col-width(21) }
+.col-22{ .col-width(22) }
+.col-23{ .col-width(23) }
+.col-24{ .col-width(24) }
+
+
+@media only screen and (max-width: 980px) {
+
+}
+// @media only screen and (max-width: 768px) {
+//     .col-1{ .col-width(2) }
+//     .col-2{ .col-width(4) }
+//     .col-3{ .col-width(6) }
+//     .col-4{ .col-width(8) }
+//     .col-5{ .col-width(10) }
+//     .col-6{ .col-width(12) }
+//     .col-7{ .col-width(14) }
+//     .col-8{ .col-width(12) }
+//     .col-9{ .col-width(18) }
+//     .col-10{ .col-width(20) }
+//     .col-11{ .col-width(22) }
+//     .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24{ .col-width(24) }
+// }
+// @media only screen and (max-width: 480px) {    
+//     .col-1{ .col-width(4) }
+//     .col-2{ .col-width(8) }
+//     .col-3{ .col-width(8) }
+//     .col-4{ .col-width(12) }
+//     .col-5{ .col-width(20) }
+//     .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24{ .col-width(24) }
+//     .cols-12 {.col-width(12)}
+//     .cols-24 {.col-width(24)}
+// }

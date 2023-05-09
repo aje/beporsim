@@ -1,0 +1,60 @@
+@media only screen and (min-width: 1400px) {
+	#homemobile {
+		max-width: 60%;
+		left: -50px;
+	}
+	#scoring {
+		.topheader {
+			height: 220px;
+		}
+		.content {
+			height: ~"calc(100% - 220px)";
+		}
+	}
+	.rightbar {
+		padding-top: 20%;
+		margin-right: 40px;
+	}
+	#whybeporsim {
+		.scroll-btn {
+			bottom: 0;
+		}
+	}
+	#scoring {
+		.topheader {
+			height: 158px;			
+		}
+		.content {
+			height: ~"calc(100% - 158px)";			
+		}
+	}
+	#contest {
+		&.slideup {
+			.translate3d(0, -180px, 0);
+			.topheader{ 
+				background-position-y: -100px;
+			}
+		}
+		.holder {
+			height: ~"calc(100% - 220px)";			
+		}
+	}
+	#devices-download {
+		.topheader {
+			height: 560px;
+
+			.deviceimg {
+				bottom: -160px;
+				.size(100%);
+			}
+		}
+		.content {
+			padding-top: 100px;
+		}
+		&.slideup {
+			.topheader {			
+				height: 220px;
+			}
+		}
+	}
+}

@@ -1,0 +1,213 @@
+.btn {
+	font-size: 1em;
+	color: white;
+	.br();
+	padding: 13px 20px;
+	height: 45px;
+	display: inline-block;
+	&.btn-default {
+		background-color: @default;
+		&:hover {
+			background-color: darken(@default, 10%);	
+			.box-shadow(0 1px 1px rgba(0,0,0,.6));		
+		}
+	}
+	&.btn-white {
+		background-color: #fff;
+		color: @black;
+		&:hover {	
+			.box-shadow(0 1px 1px rgba(0,0,0,.6));		
+		}
+	}
+	&.btn-black {
+		background-color: @black;
+		color: #fff;
+		&:hover {	
+			.box-shadow(0 1px 1px rgba(0,0,0,.6));		
+		}
+	}
+	&.btn-primary {
+		background-color: @primary;
+		color: #fff;
+		&:hover {	
+			.box-shadow(0 1px 1px rgba(0,0,0,.6));		
+		}
+	}
+	&.btn-raised {
+		.box-shadow(0 1px 1px rgba(0,0,0,.6));	
+		&:hover {
+			.box-shadow(0 2px 3px rgba(0,0,0,.8));		
+		}
+
+	}
+
+	i {
+		margin-left: 5px;
+		font-size: 1.1em;
+	}
+	img {
+		max-width: 28px;
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+}
+.btn-icon {
+	font-size: 36px;
+	.size(60px);
+	.br(50%);
+	i {
+		line-height: 37px;
+		text-align: center;
+		margin: 0;
+	}
+}
+.btn-lg {
+	height: 60px;
+	font-size: 16px;
+}
+.btn-md {
+	height: 60px;
+	font-size: 22px;
+	padding: 17px 20px;
+	i {
+		vertical-align: middle;
+	}
+}
+
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.cl {
+	.clearfix;
+}
+.vh  {
+	.visually-hidden();
+}
+
+.mtop3 {
+	margin-top: 3em;
+}
+.force-margin {
+	margin: 1.5em;
+}
+
+
+.holder {
+	position: relative;
+}
+
+.no-radius {
+	border-radius: 0;
+}
+
+//
+// Opacity
+// --------------------------------------------------
+
+.opacity-25 {	.trans(.25); }
+.opacity-50 {	.trans(.50); }
+.opacity-75 {	.trans(.75); }
+.opacity-100 {	.trans(1); }
+
+.text-xs {		font-size: 75%; }
+.text-sm {		font-size: 85%; }
+.text-lg {		font-size: 125%; }
+.text-xlg {		font-size: 150%; }
+.text-xl {		font-size: 180%; }
+.text-xxl {		font-size: 225%; }
+.text-xxxl {	font-size: 330%; }
+.text-xxxxl {	font-size: 500%; }
+
+.text-bold	  { font-weight: bold; }
+
+.text-center {  text-align: center;}
+.text-right {  text-align: right;}
+.text-left {  text-align: left;}
+
+.text-light {   color: white;}
+.text-default {   color: @black;}
+.text-primary { color: @primary;}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold;
+	margin-bottom: 1.4em;
+}
+h2 { font-size: 1.9rem}
+h3 { font-size: 1.2rem}
+p  { 
+	font-size: 1.1em; 
+	line-height: 1.7;
+}
+i.zmdi {
+	margin-left: 7px;
+}
+
+
+// Vertical alignment, works only when parent style has a display:table
+// -------------------------
+
+.stick-top-left,
+.stick-top-right,
+.stick-top-left-right {
+	position: absolute;
+	top: 0;
+}
+.stick-bottom-left,
+.stick-bottom-right,
+.stick-bottom-left-right {
+	position: absolute;
+	bottom: 0;
+}
+.stick-top-left,
+.stick-bottom-left,
+.stick-top-left-right,
+.stick-bottom-left-right {
+	left: 0;
+}
+.stick-top-right,
+.stick-bottom-right,
+.stick-top-left-right,
+.stick-bottom-left-right {
+	right: 0;
+}
+
+
+//
+// Margins
+// --------------------------------------------------
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.margin-bottom-lg {		margin-bottom: 5px; }
+.margin-bottom-xl {		margin-bottom: 10px; }
+.margin-bottom-xxl {	margin-bottom: 20px; }
+
+
+// Padding styles
+// -------------------------
+@card-gutter-width: 25px;
+.no-padding {
+	padding: 0 !important;
+}
+.force-padding {
+	padding: @card-gutter-width;
+}
+.large-padding {
+	padding: (@card-gutter-width * 2);
+}
+.small-padding {
+	padding: (@card-gutter-width / 2);
+}
+.no-y-padding {
+	padding: 0 @card-gutter-width;
+}
+.no-side-padding {
+	padding: @card-gutter-width 0;
+}

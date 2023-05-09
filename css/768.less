@@ -1,0 +1,142 @@
+@media only screen and (max-width: 768px) {
+	// all pages 
+	body {
+		font-size: 12px;
+	}
+		// all pages 
+	header {
+		padding: 10px;
+		h1 {
+			background-image: url(../img/logo-beporsim-mobile.png);
+			height: 75px;
+			width: 55px;
+		}
+	}
+	.card {
+		.small-padding {
+			padding: 5px;
+		}
+		p.col-16 {
+			font-size: 16px;
+		}
+		.number {
+			line-height: 20px;
+		}
+	}
+	#scrolldown-btn {
+		right: 25px;
+		bottom: 25px;
+
+	}
+	#footer .sponsers img {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) and (orientation:portrait){
+	#devices-download .topheader {
+		height: 400px;
+		.deviceimg {
+			width: 90%;
+		}
+	}
+	#devices-download .downloadappimg {
+	    top: 480px;
+	    right: 0;
+	    margin: auto;
+	    width: 62%;
+	}
+	#devices-download #download .right {
+		max-width: 85%;
+	    margin-right: 20px;
+	}
+	#footer .sponsers {
+		padding-top: 75px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (max-height: 480px)  {
+	#home h2 {
+		font-size: 250%;
+	}
+	#whybeporsim .rightbar {
+	    max-width: 54%;
+	    padding-top: 4%;
+	    margin-right: 73px;
+	    h2 {
+	    	font-size: 24px;
+	    	margin-bottom: 20px;
+	    }
+	}
+	#whybeporsim .scroll-btn {
+		bottom: 180px;
+	}
+	#scoring {
+		 .content {
+		 	padding: 0;
+		 	background-position: center 44px;
+		 	background-repeat-y: no-repeat;
+		 	h2 {
+		 		margin-bottom: 0;
+		 	}
+		 }
+		.description {
+			width: 100%;
+		}
+	}
+	#contest {
+		h2 {
+			margin-top: 67px;
+		    font-size: 16px;
+		}
+		h3 {
+			margin-top: 17px;
+			margin-bottom: 10px;
+		}
+		.imgwrap {
+		    margin: 8px 5px;
+		    width: 90px;
+		}
+		&.slideup {
+			.translate3d(0,-230px,0);
+		}
+		.topheader {
+		    padding: 40px 100px;
+		    height: 230px;
+		}
+		.card {
+		    min-height: 215px;
+		}
+		.holder > img {
+			max-width: 25%;
+		}
+	}
+	.card p {
+		font-size: 12px;
+	}
+	#devices-download {
+		.topheader {
+			height: 140px;
+			.deviceimg {
+				height: 200px;
+			}
+		}
+		.content {
+			padding-top: 45px;
+			p {
+			    font-size: 14px;
+			}
+		}
+		#download .right {
+		    max-width: 90%;
+		}
+		.downloadappimg {
+			display: none;
+		}
+		#download {
+		    padding-right: 45px;
+		    position: absolute;
+		    top: 15px;
+		}
+	}
+}
