@@ -776,15 +776,15 @@ table {
 /*----------------------------------------------------------------------------*/
 @font-face {
   font-family: "sans";
-  src: url('http://localhost/beporsim/css/font/sans.eot');
-  src: url('http://localhost/beporsim/css/font/sans.eot?#iefix') format('embedded-opentype'), url('http://localhost/beporsim/css/font/sans.woff') format('woff'), url('http://localhost/beporsim/css/font/sans.ttf') format('truetype');
+  src: url('../css/font/sans.eot');
+  src: url('../css/font/sans.eot?#iefix') format('embedded-opentype'), url('../css/font/sans.woff') format('woff'), url('../css/font/sans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "yekan";
-  src: url('http://localhost/beporsim/css/fonts/WebYekan.eot');
-  src: url('http://localhost/beporsim/css/fonts/WebYekan.eot?#iefix') format('embedded-opentype'), url('http://localhost/beporsim/css/fonts/WebYekan.woff') format('woff'), url('http://localhost/beporsim/css/fonts/WebYekan.ttf') format('truetype');
+  src: url('../css/fonts/WebYekan.eot');
+  src: url('../css/fonts/WebYekan.eot?#iefix') format('embedded-opentype'), url('../css/fonts/WebYekan.woff') format('woff'), url('../css/fonts/WebYekan.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1180,7 +1180,7 @@ header {
 header h1 {
   width: 66px;
   height: 111px;
-  background-image: url(http://localhost/beporsim/img/logo-beporsim.png);
+  background-image: url(../img/logo-beporsim.png);
   background-size: cover;
 }
 nav ul li {
@@ -1242,7 +1242,7 @@ nav ul li {
 }
 #home {
   background-color: pink;
-  background-image: url(http://localhost/beporsim/img/home.jpg);
+  background-image: url(../img/home.jpg);
   top: 0;
 }
 #home hgroup {
@@ -1321,7 +1321,7 @@ nav ul li {
 #whybeporsim {
   top: 100%;
   background-color: blue;
-  background-image: url(http://localhost/beporsim/img/intro-app-2.jpg);
+  background-image: url(../img/intro-app-2.jpg);
 }
 #whybeporsim .scroll-btn {
   bottom: 40px;
@@ -1347,11 +1347,11 @@ nav ul li {
 }
 #scoring .topheader {
   height: 0;
-  background-image: url(http://localhost/beporsim/img/topscoring.jpg);
+  background-image: url(../img/topscoring.jpg);
   background-position: bottom;
 }
 #scoring .content {
-  background-image: url(http://localhost/beporsim/img/bgscoring.jpg);
+  background-image: url(../img/bgscoring.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -1425,7 +1425,7 @@ nav ul li {
   top: 300%;
 }
 #contest .topheader {
-  background-image: url(http://localhost/beporsim/img/topcontest.jpg);
+  background-image: url(../img/topcontest.jpg);
   padding: 100px 0;
   background-position-y: 0;
   -webkit-transition: all 0.6s;
@@ -1572,7 +1572,7 @@ nav ul li {
   background-color: #f3f3f3;
 }
 #devices-download .topheader {
-  background-image: url(http://localhost/beporsim/img/topdevices.jpg);
+  background-image: url(../img/topdevices.jpg);
   background-position: 0 0;
   height: 320px;
   -webkit-transition: all 0.6s;
@@ -1782,7 +1782,7 @@ nav ul li {
 }
 #footer {
   top: 500%;
-  background-image: url(http://localhost/beporsim/img/footerbg.jpg);
+  background-image: url(../img/footerbg.jpg);
   background-position: 0 0;
   background-size: cover;
   height: 350px;
@@ -1885,7 +1885,7 @@ nav ul li {
     padding: 10px;
   }
   header h1 {
-    background-image: url(http://localhost/beporsim/img/logo-beporsim-mobile.png);
+    background-image: url(../img/logo-beporsim-mobile.png);
     height: 75px;
     width: 55px;
   }
